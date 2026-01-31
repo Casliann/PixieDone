@@ -1,0 +1,101 @@
+/* Container for the whole task list */
+.tasklist-container {
+  max-width: 500px;
+  width: 90%;
+  margin: 30px auto;
+  font-family: 'Segoe UI', 'Helvetica', sans-serif;
+  background-color: #fef6ff; /* soft light purple background */
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Header of the task section */
+.tasklist-header {
+  text-align: center;
+  color: #7b2ff7; /* main purple */
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Form for adding new tasks */
+.tasklist-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Input for new task */
+.tasklist-input {
+  flex: 1;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 12px;
+  border: 1px solid #dcd6f7;
+  outline: none;
+  transition: 0.2s;
+}
+
+.tasklist-input:focus {
+  border-color: #7b2ff7;
+  box-shadow: 0 0 5px rgba(123, 47, 247, 0.4);
+}
+
+/* Add button */
+.tasklist-add-btn {
+  padding: 10px 15px;
+  background-color: #7b2ff7;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.tasklist-add-btn:hover {
+  background-color: #5a1bc1;
+}
+
+/* Task list items */
+.tasklist-ul {
+  padding: 0;
+  list-style: none;
+}
+
+/* Individual task */
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  background-color: #f0f0f0;
+  font-size: 1rem;
+  transition: 0.2s;
+}
+
+/* Done tasks */
+.task-item.done {
+  background-color: #d3ffd3;
+  text-decoration: line-through;
+  color: #555;
+}
+
+/* Done button for each task */
+.task-done-btn {
+  padding: 6px 12px;
+  background-color: #7b2ff7;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.task-done-btn:hover {
+  background-color: #5a1bc1;
+}
