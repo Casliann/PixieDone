@@ -67,7 +67,7 @@
 /* Individual task */
 .task-item {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* keeps button on the right */
   align-items: center;
   padding: 12px 15px;
   margin-bottom: 12px;
@@ -75,6 +75,19 @@
   background-color: #f0f0f0;
   font-size: 1rem;
   transition: 0.2s;
+
+  /* Ensure long text wraps and stays inside the box */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* Task text span */
+.task-item span {
+  flex: 1;               /* takes available space but leaves room for button */
+  margin-right: 10px;    /* space between text and button */
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 /* Done tasks */
@@ -94,6 +107,7 @@
   border-radius: 12px;
   cursor: pointer;
   transition: 0.2s;
+  white-space: nowrap; /* prevents button text from wrapping */
 }
 
 .task-done-btn:hover {
